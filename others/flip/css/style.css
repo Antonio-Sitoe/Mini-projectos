@@ -1,0 +1,122 @@
+:root {
+   --primary: rgb(255, 206, 0);
+   --secundary: #fe4880;
+   --dark: #212121;
+   --light: #f3f3f3;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+img{
+   width: 100%;
+   max-width: 120px ;
+   margin: 0 auto 30px;
+   height: 128px;
+   display: block;
+   background-color: white;
+   border: 5px solid #fff;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+body{
+   font-family: 'Courier New', Courier, monospace;
+   width: 100%;
+   min-height: 100vh;
+}
+
+.card{
+   margin: 100px auto 0;
+   width: 400px;
+   height: 600px;
+   perspective: 600px;
+}
+
+.card_inner{
+   width: 100%;
+   height: 100%;
+   transition: transform 1s;
+   transform-style: preserve-3d;
+   cursor: pointer;
+   position:relative;
+}
+
+.card_inner.is-flipped{
+   transform: rotateY(180deg);
+}
+
+.card_face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0,0, 0,0.2);
+}
+.face-front{
+   background-image: linear-gradient(to bottom right, var(--primary),var(--secundary));
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.face-front h2{
+  color:  white;
+  font-size: 32px;
+}
+.face-back{
+   background: var(--light);
+   transform: rotateY(180deg);
+}
+
+.card-content{
+   width: 100%;
+   height: 100%;
+}
+
+.card-header{
+   position: relative;
+   padding: 30px 30px 40px;
+}
+
+.card-header::after{
+   content: '';
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   
+   z-index: -1;
+   border-radius: 50% 0 50% 0;
+
+   background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secundary) 115%);
+}
+.card-header h2 {
+   color:wheat;
+   font-size: 32px;
+   font-weight: 900;
+   text-transform: uppercase;
+   text-align: center;
+}
+.card-body{
+   padding: 30px;
+   text-align: center;
+}
+.card-body h3{
+   color: var(--dark);
+   font-size: 24px;
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+.card-body p{
+   color: var(--dark);
+   font-size: 18px;
+   line-height: 1.5;
+   margin-bottom: 15px;
+   
+}
