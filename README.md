@@ -8,7 +8,7 @@ desde ja tenho :
 - Logica de programacao
 
 - Flip cards - com html, css ee javascript
-![image](https://user-images.githubusercontent.com/72309855/124386611-8a3af400-dcdb-11eb-802d-8ca8cde7e1bd.png)
+- ![image](https://user-images.githubusercontent.com/72309855/124386611-8a3af400-dcdb-11eb-802d-8ca8cde7e1bd.png)
 
 - Clone do App da netflix
 - ![image](https://user-images.githubusercontent.com/72309855/124386674-c1a9a080-dcdb-11eb-8794-5743f1dae04e.png)
