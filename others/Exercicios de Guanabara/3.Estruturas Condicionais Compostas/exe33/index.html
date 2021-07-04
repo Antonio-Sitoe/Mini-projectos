@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h2,
+        H3 {
+            font-family: monospace;
+            color: rgb(15, 67, 67);
+        }
+
+        [data-button] {
+            background: teal;
+            border: none;
+            margin-top: 15px;
+            width: 450px;
+            color: honeydew;
+            display: none;
+        }
+
+        body {
+            background-color: teal;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+            background: whitesmoke;
+            padding: 5px 10px 10px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+        }
+
+        input {
+            padding: 10px;
+            width: 70%;
+            margin: .5rem 0;
+        }
+
+        [data-resp] {
+            padding: 10px;
+            margin-bottom: 20px;
+            animation: .3s show-down forwards;
+        }
+
+        @keyframes show-down {
+            from {
+                opacity: 0;
+                transform: translate3d(0, -30px, 0);
+            }
+
+            from {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        button,
+        .inputBotao {
+            padding: 6px 15px;
+            color: whitesmoke;
+            background-color: teal;
+            border: none;
+        }
+
+        button.nao {
+            background: tomato;
+        }
+
+        [data-form] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div data-div>
+            <h2>Seja bem vindo ao banco PobrezaMata</h2>
+            <h3>Voce deseja Fazer um emprestimo?</h3>
+            <button>SIM</button>
+            <button class="nao">NAO</button>
+        </div>
+
+        <form action="" data-form method="">
+            <input type="text" name="valorCasa" id="valorCasa" placeholder="Digite o valor da casa">
+            <input type="text" name="salario" id="salario" placeholder="Digite o seu salario">
+            <input type="text" name="anos" id="anos" placeholder="Digite oos anos que voce vai pagar">
+            <input type="submit" value="Emprestimo" class="inputBotao" style="width: 75%;">
+        </form>
+        <div data-resp>
+
+        </div>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

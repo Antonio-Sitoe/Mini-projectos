@@ -1,0 +1,23 @@
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid red;
+  display: grid;
+  grid-gap: 20px;
+  /* grid-template-columns: repeat(auto-fill, minimax(100px, auto)); */
+  align-content: stretch;
+  grid-auto-flow: column;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.container div {
+  background: grey;
+  height: 80px;
+}

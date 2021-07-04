@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container" style="margin-top: 2rem;">
+        <div class="row">
+            <div class="col col-content ">
+                <div class="teste">Cadastro</div>
+
+                <div class="cadastro" id="formulario">
+
+
+                    <label for="nome">Nome do cliente</label>
+                    <input id="nome" type="text" placeholder="Digite o seu nome">
+
+
+
+                    <label for="moeadaOrigem">Moeda de origem</label>
+                    <input type="text" id="moeadaOrigem" placeholder="Digite a sua moeda de origem">
+
+
+
+                    <label for="moedaDistino">Moeda de distino</label>
+                    <input type="text" id="moedaDistino" placeholder="Digite a moeda de distino">
+
+
+                    <label for="date">Data da operacao</label>
+                    <input type="date" name="" id="date">
+
+                    <label for="valorOriginal">
+                        Valor Original
+                    </label>
+                    <input type="text" id="valorOriginal" placeholder="Digite o valor original">
+
+                    <label for="valorConvertido">
+                        Valor convertido
+                    </label>
+                    <input type="text" id="valorConvertido" placeholder="Digite o Valor convertido">
+
+
+                    <label for="taxaCobrada">Taxa Cobrada</label>
+                    <input type="text" placeholder="Digite a taxa Cobrada" id="taxaCobrada">
+
+                    <button class="btns">Registrar</button>
+
+                </div>
+            </div>
+
+            <div class="col col-sidebar ">
+                <div class="teste">LIsta de clientes existentes</div>
+
+                <div class="cadastro" style="margin-top: 2rem;">
+                    <button class="btns">Mauro Santos</button>
+                    <button class="btns">Antonio Sitoe</button>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script type="module" src="scripts/index.js"></script>
+
+</body>
+
+</html>

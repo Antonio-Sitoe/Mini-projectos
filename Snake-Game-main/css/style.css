@@ -1,0 +1,73 @@
+html, body, h1, main, div, h2, h3, h4, ul, li,canvas, a{
+   padding: 0;
+   margin: 0; 
+}
+*{
+   box-sizing: border-box;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+body{
+   background: #59F123;
+   font-family: 'Syne Mono', monospace;
+ 
+}
+
+.container{
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+.display{
+   min-height: 100vh;
+   padding: .6rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+ 
+}
+
+
+h1 {
+   color: white;
+   font-size: 7rem;
+   margin-bottom: 2rem;
+}
+
+a{
+   cursor: pointer;
+   padding: 1rem 3rem;
+   color: whitesmoke;
+   margin: 2rem 0;
+   font-size: 2rem;
+   background:#1B4633;
+
+}
+
+
+@media(max-width: 600px){
+   h1{
+      font-size: 5rem;
+      text-align: center;
+   }
+   .display a {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+   }
+}
+
+/*Game*/
+
+h3{
+   font-size: 3rem;
+   color: #1B4633;
+}

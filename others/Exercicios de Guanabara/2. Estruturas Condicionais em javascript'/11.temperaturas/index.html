@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //         //Deseja-se converter uma medida de temperatura da escala Celsius para Fahrenheit ou vice-versa. Para
+        // isso, você deve construir um programa que leia a letra "C" ou "F" indicando em qual escala vai ser
+        // informada uma temperatura. Em seguida o programa deve mostrar a temperatura na outra escala comduas casas decimais. A seguir é dada a fórmula para converter de Fahrenheit para Celsius (você deve
+        // 5
+        // deduzir a fórmula de Celsius para Fahrenheit): C  ( F  32 )
+        // 9
+
+        const cn = prompt("Voce vai digitar a temperatutra em qual escala (f/c) ?")
+
+
+
+        if (cn === 'f') {
+            const fr = +(prompt("digite a temperatura em farenheit"));
+
+            function farenheit() {
+                return (fr - 32) / 1.8;
+            }
+            console.log("Temeratura equivalente em celcius", farenheit().toFixed(2))
+
+
+        } else if (cn === 'c') {
+            const c = +(prompt("digite a temperatura em celsius"));
+
+            function celcius() {
+                return (c * 1.8) + 32
+            }
+            console.log("Temeratura equivalente em Farenheit", celcius().toFixed(2))
+
+        } else {
+            alert('Digite f ou c minusculo')
+        }
+    </script>
+</body>
+
+</html>

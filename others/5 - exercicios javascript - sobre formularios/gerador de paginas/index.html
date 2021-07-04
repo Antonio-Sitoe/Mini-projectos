@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .container {
+        padding: 60px;
+        margin: 50px auto;
+        max-width: 960px;
+        background-color: whitesmoke;
+      }
+
+      .ps {
+        font-size: 12px;
+      }
+
+      form {
+        display: grid;
+        grid-gap: 20px;
+      }
+      input {
+        padding: 10px;
+      }
+
+      .btn {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .btn button {
+        padding: 0.8rem;
+        color: #252524;
+      }
+
+      .newPage{
+        animation: show-up .3s forwards;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <label for="title">Titulo da pagina</label>
+        <input
+          type="text"
+          id="title"
+          placeholder="Digite o titulo da pagina"
+          title="Esse titulo vai aparecer no topo da pagina"
+        />
+
+        <label for="title">Titulo dos textos</label>
+        <input
+          type="text"
+          id="titulo"
+          placeholder="Digite o titulo do texto"
+          title="Esse titulo vai aparecer no topo da pagina"
+        />
+
+        <label for="title">Paragrafos</label>
+        <input
+          type="text"
+          class="p"
+          id="paragraph1"
+          placeholder="Digite o paragrafo"
+          title="Esse titulo vai aparecer no topo da pagina"
+          />
+          <label for="title">SubTitulo dos textos</label>
+          <input
+          type="text"
+          id="subtitulo1"
+          placeholder="Digite o subtitulo do texto"
+          title="Esse titulo vai aparecer no topo da pagina"
+          />
+          
+          <label for="title">Segundo paragrafo</label>
+          <input
+          type="text"
+          class="p"
+          id="paragraph2"
+          placeholder="Digite o segundo paragrafo"
+          title="Esse e o segundo paragrafo"
+          />
+          
+          <label for="title">Subtitulo da pagina</label>
+          <input
+          type="text"
+          id="subtitulo2"
+          placeholder="Digite o ultimo subtitulo"
+          title="Esse campo mostra o ultimo subtitulo"
+          />
+          
+          <label for="title">Ultimo paragrafo</label>
+          <input
+          type="text"
+          class="p"
+          id="paragraph3"
+          placeholder="Digite o ultimo paragrafo"
+          title="Esse Campo esta mostra o ultimo paragrafo"
+        />
+        <label for="color">Cor dos textos</label>
+        <input type="color" name="color" id="color" />
+        <label for="colorTitle">Cor dos Titulos</label>
+        <input type="color" name="colorTitle" id="colorTitle" />
+
+        <div class="btn">
+          <button data-preview>Preview</button>
+          <button data-gerar>Gerar a pagina</button>
+        </div>
+      </form>
+    </div>
+    <div class="content">
+
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+.play-main {
+   width: 100%;
+   height: 100%;
+}
+
+.game-layoult {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.dasbord {
+   padding: .6rem;
+   flex: 1 1 50%;
+   min-height: 100vh;
+   height: 100%;
+
+   text-align: center;
+   background: #33623C;
+}
+
+.jogo {
+   padding: .6rem;
+   flex: 1 1 60%;
+   min-height: 100vh;
+   background: #33623C;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.canvas {
+   border: 9px solid #4CB47F;
+}
+
+.dasbord h3 {
+   font-size: 2rem;
+   margin: 3rem 0 1.5rem;
+   color: whitesmoke;
+}
+
+#score-numbers {
+   padding: .6rem 2rem;
+   margin-top: 1rem;
+   background: #172e1c;
+
+}
+
+#score-numbers span {
+   font-size: 4rem;
+   font-weight: bold;
+   color: #5DE620;
+}
+
+.snake-manipulaction span {
+   background: #5DE620;
+   padding: 1px 9px;
+   border: 1px solid #172e1c;
+}
+
+.snake-manipulaction span:last-child {
+   background: #00ff88;
+}
+
+.fruta {
+   background: #ff5100;
+   padding: 0rem 9px;
+   border-radius: 10px;
+   border: 1px solid #172e1c;
+
+}
+
+.arrow {
+   display: none;
+}
+
+
+
+@media(max-width:770px) {
+   body {
+      background: #33623C;
+   }
+
+   .sair {
+      position: absolute;
+      top: -100px;
+      right: 300px;
+   }
+
+   .game-layoult {
+      flex-direction: column;
+   }
+
+   .dasbord {
+      display: none;
+   }
+
+   .arrow {
+      display: flex;
+      position: absolute;
+      top: 900px;
+      left: 450px;
+   }
+
+   .arrow span {
+      font-size: 2rem;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0ac06e;
+      cursor: pointer;
+      line-height: .5px;
+   }
+
+   .arrow span:hover {
+      background: #0ac06e;
+
+   }
+
+   .up {
+      position: relative;
+      top: -120px;
+      right: -69px;
+   }
+
+   .down {
+      position: relative;
+      left: -11px;
+   }
+
+   .left {
+      position: relative;
+      top: -60px;
+      left: 58px;
+
+   }
+
+   .rigth {
+      position: relative;
+      top: -60px;
+      right: -80px;
+   }
+
+
+   .jogo {
+      order: 1;
+      min-height: 80vh;
+   }
+}
+
+@media(max-width:430px) {
+
+   .sair {
+      position: absolute;
+      top: -600px;
+      left: 60px;
+      font-size: 1.5rem;
+
+   }
+
+   .canvas {
+      width: 300px;
+      height: 300px;
+      border: 1px solid rgb(8, 173, 49);
+   }
+
+   .arrow {
+      display: flex;
+      position: absolute;
+      top: 600px;
+      left: 60px;
+   }
+
+   .arrow span {
+      font-size: 2rem;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0ac06e;
+
+      cursor: pointer;
+      line-height: .5px;
+   }
+
+   .up {
+      position: relative;
+      top: -120px;
+      right: -69px;
+   }
+
+   .down {
+      position: relative;
+      left: -11px;
+   }
+
+   .left {
+      position: relative;
+      top: -60px;
+      left: 58px;
+
+   }
+
+   .rigth {
+      position: relative;
+      top: -60px;
+      right: -80px;
+   }
+}
+
+@media(max-width:320px) {
+   .arrow {
+      position: absolute;
+      top: 520px;
+      left: 40px;
+   }
+
+   .sair {
+      position: absolute;
+      top: -550px;
+      right: 300px;
+      font-size: 1rem;
+      text-align: center;
+   }
+}

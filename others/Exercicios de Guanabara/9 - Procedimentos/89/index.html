@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="gerador('Portugol studio', 4,1)">Clique aqui</button>
+    <script>
+        function gerador(frase, num, bord) {
+            let i = 0;
+            document.write(borda(bord),'<br>')
+            while (i <= num) {
+                document.write(`          ${frase}                <br>`)
+                i++;
+            }
+            document.write(borda(bord))
+        }
+
+        function borda(bord) {
+            let borda;
+            if (bord === 1) {
+                borda = `+---------------====================----------------+ <br>`;
+            } else if (bord === 2) {
+                borda = `+~~~~~~~~~~~~~~~~~~~~++++++++++~~~~~~~~~~~~~~~~~~~~+ <br>`;
+            } else if (bord === 3) {
+                borda = `<<<<<<<<<<<<<>>>====================>>>>>>>>>>>>>>>-+ <br>`;
+            } else {
+                borda = '+-----------------------------------------------+<br>';
+            }
+            return borda;
+        }
+    </script>
+</body>
+
+</html>

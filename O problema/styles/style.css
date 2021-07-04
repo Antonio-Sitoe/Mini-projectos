@@ -1,0 +1,74 @@
+body {
+  background: rgb(255, 252, 251);
+}
+
+.conts {
+  margin-top: 6rem;
+}
+.container .eu {
+  text-align: center;
+  padding: 20rem 0;
+
+  height: 60rem;
+}
+
+h1,
+h2 {
+  padding: 2rem 0;
+}
+
+.row {
+  padding-top: 6rem;
+}
+
+input,
+select {
+  padding: 0.7rem 2rem;
+  border-radius: 0.6rem;
+  border-color: whitesmoke;
+  outline: none;
+}
+
+select {
+  background: whitesmoke;
+}
+
+.cadastro {
+  display: grid;
+  grid-gap: 10px;
+  margin-top: 2rem;
+}
+
+input,
+.btns {
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  border: 1px solid rgb(228, 225, 225);
+  outline: none;
+}
+.col.divs{
+  position: relative;
+}
+
+.col.divs input{
+  margin-bottom: 2rem;
+}
+
+p.error {
+  position: absolute;
+
+  font-size: 12px;
+  color: brown;
+  animation: 0.3s forwards show-dow;
+}
+
+@keyframes show-dow {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

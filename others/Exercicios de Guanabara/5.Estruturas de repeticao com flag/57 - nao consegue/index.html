@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        let i = 's';
+        let salario = 0;
+        let sexo;
+
+        while (i === 's') {
+            salario = +(prompt('diigite um numero'));
+            sexo = prompt('Digita um sexo com "f" e "h"');
+
+            i = prompt('Voce quer continuar? digite "n" para nao e "s"')
+            totalSalariosPagosHomens(sexo, salario)
+
+
+        }
+
+        function totalSalariosPagosHomens(sexo, salario) {
+            if (sexo === 'h') {
+                h += salario
+            }
+            if (sexo === 'f') {
+                f += salario
+            }
+        }
+
+        console.log('TOTAL HOMES', h)
+        console.log('TOTAL MULHERES', F)
+    </script>
+</body>
+
+</html>

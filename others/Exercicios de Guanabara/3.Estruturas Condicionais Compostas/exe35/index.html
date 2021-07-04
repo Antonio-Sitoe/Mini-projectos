@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background: teal;
+    }
+    .container{
+      background: whitesmoke;
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 600px;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+      color: #252525;
+    }
+    input {
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .resposta{
+      background: rgb(74, 32, 32);
+      padding: 10px;
+      color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Qual o tipo de carro </h3>
+    <form action="">
+      <input type="radio" name="carros" id="popular" value="popular">
+      <Label for="popular">popular</Label>
+      <input type="radio" name="carros" id="luxo" value="luxo">
+      <Label for="luxo">luxo</Label>
+      <p>Quantos dias andaste?</p>
+      <input type="number" name="dias" id="dias">
+      <p>Quantos km andaste?</p>
+      <input type="number" name="km" id="km">
+    </form>
+    <button id="btn">calcular</button>
+    <div id="resposta">
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
