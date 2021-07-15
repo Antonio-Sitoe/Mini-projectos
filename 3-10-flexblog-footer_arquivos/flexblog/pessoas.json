@@ -1,13 +1,5 @@
 [
-  {
-    "nome": "Miguel",
-    "email": "miguel@email.com.br",
-    "salario": 27211,
-    "estado": "MG",
-    "empresa": "Facebook",
-    "idade": 34,
-    "post": "O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão"
-  },
+
   {
     "nome": "Sophia",
     "email": "sophia@empresa.com.br",
