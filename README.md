@@ -19,3 +19,6 @@ desde ja tenho :
 
 - Snake Game (versao desktop e mobile)
 - ![image](https://user-images.githubusercontent.com/72309855/124386733-0b928680-dcdc-11eb-94cf-f4454204c14c.png)
+
+- Player de audio com HTML E JAVASCRIPT 
+
