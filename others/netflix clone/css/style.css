@@ -1,0 +1,174 @@
+@media (min-width: 360px) {
+  .form-contaner {
+    position: relative;
+    display: grid;
+    grid-gap: 20px;
+  }
+
+  input {
+    width: 20rem;
+    height: 4rem;
+    margin: 0.6rem 0;
+    border-radius: 8px;
+    border: none;
+    padding: 0 20px;
+    outline: none;
+  }
+}
+
+@media (min-width: 360px) {
+  .grid-container {
+    background: url("../img/bg.svg") no-repeat;
+    background-size: 100vh;
+    height: 100vh;
+    padding: 0 30px;
+    margin: 60px 0;
+  }
+  .grid-container.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-bottom: 15rem;
+  }
+  .loginPage {
+    width: 10rem;
+  }
+
+  input {
+    width: 300px;
+    height: 64px;
+    border-radius: 8px;
+    border: none;
+    padding: 0 20px;
+    outline: none;
+  }
+  .email {
+    background: #221f1f;
+    color: whitesmoke;
+  }
+  .form-contaner {
+    position: relative;
+    display: grid;
+    grid-gap: 20px;
+  }
+}
+
+.grid-container {
+  background: url("../img/bg.svg");
+  background-size: 100vh;
+  height: 100vh;
+}
+
+.login-container {
+  background: #000000;
+  height: 100vh;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  position: relative;
+}
+
+.container {
+  margin: 60px 0;
+}
+
+.title {
+  color: whitesmoke;
+  margin: 30px 0;
+}
+.btn {
+  width: 100%;
+  height: 48px;
+  border: none;
+  display: flex;
+  background: #e50914;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: "Roboto";
+  font-weight: bold;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.help {
+  color: rgb(158, 150, 150);
+  margin-top: 50px;
+  text-align: center;
+}
+
+.regis {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  background: #000000;
+  border: none;
+  color: white;
+}
+
+[data-error2],
+[data-error] {
+  position: absolute;
+  display: none;
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+  height: 30px;
+  background: rgb(64, 29, 29);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+[data-error] {
+  top: 150px;
+}
+
+[data-error2] {
+  top: 100px;
+}
+
+[data-error].ative,
+[data-error2].ative {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  animation: 0.6s show-dow forwards;
+}
+
+@keyframes show-dow {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.emailRed {
+  border: 1px solid red;
+}
+
+
+
+.form-contaner.register{
+  display: none;
+}
+
+.form-contaner.register.ative{
+  display: grid;
+}
+
+.error {
+  font-size: 12px;
+  text-align: center;
+}
