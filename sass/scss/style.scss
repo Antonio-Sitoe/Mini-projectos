@@ -1,0 +1,89 @@
+@mixin title-large {
+  font-size: 4em;
+  font-weight: bold;
+  font-family: monospace;
+  line-height: 1;
+}
+
+@mixin border-box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+@mixin separador($color) {
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100px;
+    background: $color;
+  }
+}
+
+@mixin box-shadow($show...) {
+  box-shadow: $show;
+}
+
+$roxo: #8e8699;
+$font: arial;
+
+$roxo: pink;
+
+section {
+ 
+  section.modal {
+    max-width: 600px;
+    margin: 0 auto;
+    font: $font;
+  }
+
+  h1 {
+    color: $roxo;
+    font-family: monospace;
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.4;
+    max-width: 400px;
+  }
+
+  a {
+    display: block;
+    max-width: 120px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    background: $roxo;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: monospace;
+  }
+}
+
+ul {
+  text-align: center;
+
+  li {
+    display: inline-block;
+    list-style: none;
+
+    a {
+      padding: 20px;
+      border: 1px solid;
+      text-decoration: none;
+      background: $roxo;
+      font-family: $font;
+
+      &:hover {
+        background: blue;
+      }
+    }
+  }
+}
+
+h1 {
+  @include title-large;
+  @include separador(#84e);
+}
